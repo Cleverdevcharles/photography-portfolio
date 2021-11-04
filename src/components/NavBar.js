@@ -90,11 +90,13 @@ const NavBar = ({ toggle }) => {
     <Nav
       style={
         coloredNav
-          ? { backgroundColor: "#000", boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)"}
+          ? { backgroundColor: "#000", boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)" }
           : null
       }
     >
-      <Logo to="/">DONPHOTOS</Logo>
+      <Logo to="/">
+        <b>DONPHOTOS</b>
+      </Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
