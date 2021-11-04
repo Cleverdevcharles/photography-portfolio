@@ -30,11 +30,13 @@ const Developer = ({
                 alt="Developer's Photo"
               />
             </a>
-            <div style={{marginTop: "50px"}}>
-              <h1>{developer_name}</h1>
-              <h3>{developer_email}</h3>
-              <h3>{developer_phone}</h3>
-            </div>
+            <center>
+              <div className="devInfo" style={{ marginTop: "50px", width:"500px" }}>
+                <h1 className="h1">{developer_name}</h1>
+                <h3 className="h3">{developer_email}</h3>
+                <h3 className="h3">{developer_phone}</h3>
+              </div>
+            </center>
           </div>
         </div>
       </center>

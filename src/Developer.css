@@ -1,11 +1,10 @@
 .devImage-container-div {
- width: 100%;
-   padding: 7rem 0rem;
-
+  width: 100%;
+  padding: 7rem 0rem;
 }
 
 .dev-image-container {
-    padding: 0rem 7rem;
+  padding: 0rem 7rem;
 }
 .dev-image-container .devImage {
   position: relative;
@@ -16,4 +15,50 @@
   -o-object-fit: cover;
   object-fit: cover;
   border: 2px solid #292929;
+}
+
+@media only screen and (max-width: 600px) {
+  .dev-image-container .devImage img {
+    height: 100px;
+    width: 100px;
+  }
+  .h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  .h3 {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .dev-image-container .devImage img {
+    height: 100px;
+    width: 100px;
+  }
+  .h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  .h3 {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .dev-image-container .devImage img {
+    height: 100px;
+    width: 100px;
+  }
+  .h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  .h3 {
+    width: 100%;
+    font-size: 16px;
+  }
 }

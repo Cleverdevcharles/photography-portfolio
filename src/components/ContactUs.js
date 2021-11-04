@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
 import { toast } from "react-toastify";
 import emailjs from "emailjs-com";
 import "../ContactUs.css";
+
+const Effect = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+};
 
 const ContactUs = ({
   phone,
@@ -15,6 +22,7 @@ const ContactUs = ({
     subject: "",
     message: "",
   });
+  Effect();
 
   const { fullName, email, subject, message } = formData;
   const handleChange = (text) => (e) => {
@@ -100,9 +108,9 @@ const ContactUs = ({
             <h2 className="heading-section">CONTACT US</h2>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" data-aos="zoom-in-left">
           <div className="col-md-12">
-            <div className="wrapper">
+            <div className="wrapper contact">
               <div className="row no-gutters">
                 <div className="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
                   <div className="contact-wrap w-100 p-md-5 p-4">
@@ -227,7 +235,7 @@ const ContactUs = ({
                       <div className="text pl-3">
                         <p>
                           <span>Email: </span>
-                          <a>{site_email}</a>
+                          <a className="email">{site_email}</a>
                         </p>
                       </div>
                     </div>

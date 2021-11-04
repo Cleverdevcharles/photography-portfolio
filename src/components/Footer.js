@@ -5,9 +5,9 @@ import "../Footer.css";
 const Footer = ({ phone, site_email, address, paragraphOne, paragraphTwo }) => {
   return (
     <footer class="footer">
-      <div class="container bottom_border">
-        <div class="row">
-          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+      <div class="container bottom_border footer-container">
+        <div>
+          <div class=" col-md-12">
             <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
             <p class="mb10">
               {paragraphOne}

@@ -75,6 +75,7 @@ const DropDrown = ({ isOpen, toggle }) => {
           {menuData.map((item, index) => (
             <DropdownLink
               to={item.link}
+              onClick={toggle}
               key={index}
               activeClass="active"
               spy={true}
@@ -88,6 +89,7 @@ const DropDrown = ({ isOpen, toggle }) => {
           <Button
             primary="true"
             activeClass="active"
+            onClick={toggle}
             spy={true}
             smooth={true}
             big="true"

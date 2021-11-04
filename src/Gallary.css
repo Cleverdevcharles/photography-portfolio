@@ -8,9 +8,8 @@ body {
   justify-content: center;
 }
 .image-container-div {
- width: 100%;
-   padding: 7rem 0rem;
-
+  width: 100%;
+  padding: 7rem 0rem;
 }
 
 .image-container {
@@ -18,7 +17,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 0.5rem;
-   padding: 0rem 7rem;
+  padding: 0rem 7rem;
 }
 .image-container .image {
   position: relative;
@@ -33,7 +32,6 @@ body {
   position: absolute;
   top: 0;
 }
-
 
 .image-container .image img:nth-of-type(1) {
   filter: grayscale(1) brightness(40%);
@@ -53,4 +51,34 @@ body {
 .image {
   --clip-start: ellipse(0 0 at 0 0);
   --clip-end: ellipse(150% 150% at 0 0);
+}
+
+
+@media only screen and (max-width: 610px) {
+  .image-container {
+    width: 800px;
+    margin-left: 20px;
+    padding: 0rem 12rem;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .image-container {
+    width: 700px;
+    margin-left: 30px;
+    padding: 0rem 13rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .image-container {
+    width: 700px;
+    margin-left: 30px;
+    padding: 0rem 14rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .image-container {
+    width: 700px;
+    margin-left: 15px;
+    padding: 0rem 15rem;
+  }
 }

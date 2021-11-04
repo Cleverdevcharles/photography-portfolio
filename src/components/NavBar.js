@@ -12,8 +12,11 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
+  background: transparent;
   width: 100%;
   transition: 0.5s ease-in-out;
+  top: 0;
+  left: 0;
 `;
 
 const NavLink = css`
@@ -87,7 +90,7 @@ const NavBar = ({ toggle }) => {
     <Nav
       style={
         coloredNav
-          ? { backgroundColor: "#000", boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)" }
+          ? { backgroundColor: "#000", boxShadow: "0 2px 4px 0 rgba(0,0,0,.2)"}
           : null
       }
     >

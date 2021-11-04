@@ -10,6 +10,10 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
+
+  @media screen and (max-width: 608px) {
+    right: 40%;
+  }
 `;
 
 const HeroSection = styled.section`
@@ -66,7 +70,7 @@ const HeroImage = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 `;
@@ -86,16 +90,40 @@ const HeroContent = styled.div`
     text-transform: uppercase;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
     text-align: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
     margin-botton: 0.8rem;
+
+    @media screen and (max-width: 608px) {
+      text-align: center;
+      padding: 0rem 7rem;
+    }
   }
 
   p {
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
     margin-botton: 1.2rem;
   }
+
+  .heroBtn {
+    @media screen and (max-width: 608px) {
+      justify-content: center;
+      margin: 0rem 10rem;
+    }
+  }
+  @media only screen and (max-width: 610px) {
+    width: 800px;
+    margin-left: 20px;
+    padding: 0rem 9rem;
+  }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)``;
+const Arrow = styled(IoMdArrowRoundForward)`
+  margin-top: 5px;
+`;
 
 const arrowButtons = css`
   width: 50px;
@@ -172,8 +200,9 @@ const Hero = ({ slides }) => {
                       smooth={true}
                       primary="true"
                       css={`
-                        max-width: 160px;
+                        max-width: 170px;
                       `}
+                      className="heroBtn"
                     >
                       {slide.label}
                       <Arrow />
