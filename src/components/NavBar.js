@@ -97,7 +97,6 @@ const NavBar = ({ toggle }) => {
         {menuData.map((item, index) => (
           <NavMenuLinks
             to={item.link}
-            onClick={toggle}
             key={index}
             activeClass="active"
             spy={true}
@@ -109,7 +108,7 @@ const NavBar = ({ toggle }) => {
       </NavMenu>
       <NavBtn>
         <Button
-          to="/contact-us"
+          to={item.link}
           activeClass="active"
           spy={true}
           smooth={true}

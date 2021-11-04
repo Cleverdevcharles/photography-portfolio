@@ -1,6 +1,6 @@
 import React from "react";
 import { menuData } from "../data/MenuData";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Button } from "./Button";
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components/macro";
@@ -73,13 +73,28 @@ const DropDrown = ({ isOpen, toggle }) => {
       <DropdownWrapper>
         <DropdownMenu>
           {menuData.map((item, index) => (
-            <DropdownLink to={item.link} key={index}>
+            <DropdownLink
+              to={item.link}
+              key={index}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+            >
               {item.title}
             </DropdownLink>
           ))}
         </DropdownMenu>
         <BtnWrap>
-          <Button primary="true" big="true" round="true" to="/contact-us">
+          <Button
+            primary="true"
+            key={index}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            big="true"
+            round="true"
+            to="/contact-us"
+          >
             Contact Us
           </Button>
         </BtnWrap>
