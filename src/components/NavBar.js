@@ -97,6 +97,7 @@ const NavBar = ({ toggle }) => {
         {menuData.map((item, index) => (
           <NavMenuLinks
             to={item.link}
+            onClick={toggle}
             key={index}
             activeClass="active"
             spy={true}
