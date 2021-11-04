@@ -108,7 +108,7 @@ const NavBar = ({ toggle }) => {
       </NavMenu>
       <NavBtn>
         <Button
-          to={item.link}
+          to="/contact-us"
           activeClass="active"
           spy={true}
           smooth={true}
