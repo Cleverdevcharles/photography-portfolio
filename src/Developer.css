@@ -1,0 +1,19 @@
+.devImage-container-div {
+ width: 100%;
+   padding: 7rem 0rem;
+
+}
+
+.dev-image-container {
+    padding: 0rem 7rem;
+}
+.dev-image-container .devImage {
+  position: relative;
+}
+.dev-image-container .devImage img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 2px solid #292929;
+}
