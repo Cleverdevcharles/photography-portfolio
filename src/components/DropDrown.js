@@ -87,7 +87,6 @@ const DropDrown = ({ isOpen, toggle }) => {
         <BtnWrap>
           <Button
             primary="true"
-            key={index}
             activeClass="active"
             spy={true}
             smooth={true}
